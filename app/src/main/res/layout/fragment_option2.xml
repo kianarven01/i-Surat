@@ -114,6 +114,7 @@
                     android:padding="8dp"
                     android:layout_margin="4dp" />
             </LinearLayout>
+
         </LinearLayout>
 
         <!-- Question 2: Escuela -->

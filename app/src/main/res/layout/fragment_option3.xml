@@ -2,9 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#FFF">
+    android:background="#FDF7F2">
 
     <!-- Header with Logo and Title -->
     <LinearLayout
@@ -31,7 +32,7 @@
             android:layout_marginTop="8dp" />
     </LinearLayout>
 
-    <!-- Search Bar -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -62,7 +63,7 @@
         android:id="@+id/instructions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Panuto: Hanapin sa bawat kahon ang wastong bantas upang mabuo ang pangungusap"
+        android:text="Panuto: Hanapin sa kahon at i-drag ang wastong bantas upang mabuo ang pangungusap."
         android:layout_marginTop="16dp"
         android:textSize="14sp"
         android:lineSpacingExtra="4dp"
@@ -73,6 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:background="@drawable/maroon_border"
         android:gravity="center"
         android:orientation="horizontal"
         android:paddingTop="8dp"
@@ -82,8 +84,10 @@
             android:id="@+id/punctuation1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/circle_border"
             android:layout_margin="8dp"
-            android:padding="10dp"
+            android:textColor="@color/black"
             android:textSize="40dp"
             android:text="!" />
 
@@ -91,8 +95,10 @@
             android:id="@+id/punctuation2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/circle_border"
             android:layout_margin="8dp"
-            android:padding="10dp"
+            android:textColor="@color/black"
             android:textSize="40dp"
             android:text="." />
 
@@ -100,8 +106,10 @@
             android:id="@+id/punctuation3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/circle_border"
             android:layout_margin="8dp"
-            android:padding="10dp"
+            android:textColor="@color/black"
             android:textSize="40dp"
             android:text="-" />
 
@@ -109,130 +117,281 @@
             android:id="@+id/punctuation4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/circle_border"
             android:layout_margin="8dp"
-            android:padding="10dp"
+            android:textColor="@color/black"
             android:textSize="40dp"
             android:text="," />
 
+        <TextView
+            android:id="@+id/punctuation5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/circle_border"
+            android:layout_margin="8dp"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:text="@string/question_mark"  />
 
+        <TextView
+            android:id="@+id/punctuation6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/circle_border"
+            android:layout_margin="8dp"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:text="&quot;" />
+        
     </LinearLayout>
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginTop="16dp">
+        android:layout_marginBottom="16dp">
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
 
             <!-- Question 1 -->
-            <LinearLayout
+            <com.google.android.flexbox.FlexboxLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:layout_marginBottom="16dp">
+                app:flexWrap="wrap"
+                app:justifyContent="flex_start"
+                app:alignItems="baseline"
+                android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/question1"
-                    android:layout_width="0dp"
+                    android:id="@+id/q1word1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:text="1. Sa"
+                    android:textSize="16sp"
+                    android:paddingEnd="4dp" />
 
-                    android:textSize="14sp"
-                    android:lineSpacingExtra="4dp" />
-            </LinearLayout>
+                <TextView
+                    android:id="@+id/q1word2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bakasyon"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:paddingEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/q1word3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pupunta kami sa"
+                    android:textSize="16sp"
+                    android:paddingEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/q1word4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baguio"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:paddingEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/q1word5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tagaytay,"
+                    android:textSize="16sp"
+                    android:paddingEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/q1word6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="at Ilocos."
+                    android:textSize="16sp"
+                    android:paddingEnd="4dp" />
+
+            </com.google.android.flexbox.FlexboxLayout>
 
             <!-- Question 2 -->
-            <LinearLayout
+            <com.google.android.flexbox.FlexboxLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:layout_marginBottom="16dp">
+                app:flexWrap="wrap"
+                app:justifyContent="flex_start"
+                app:alignItems="baseline"
+                android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/question2"
-                    android:layout_width="0dp"
+                    android:id="@+id/q2word1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:lineSpacingExtra="4dp"
+                    android:text="2. Ang paborito kong prutas ay "
+                    android:textSize="16sp" />
 
-                    android:textSize="14sp" />
-            </LinearLayout>
+                <TextView
+                    android:id="@+id/q2word2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="saging"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:paddingEnd="4dp" />
+
+            </com.google.android.flexbox.FlexboxLayout>
 
             <!-- Question 3 -->
-            <LinearLayout
+            <com.google.android.flexbox.FlexboxLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:layout_marginBottom="16dp">
+                app:flexWrap="wrap"
+                app:justifyContent="flex_start"
+                app:alignItems="baseline"
+                android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/question3"
-                    android:layout_width="0dp"
+                    android:id="@+id/q3word1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:lineSpacingExtra="4dp"
+                    android:text="3. Si Juan ay "
+                    android:textSize="16sp" />
 
-                    android:textSize="14sp" />
-            </LinearLayout>
+                <TextView
+                    android:id="@+id/q3word2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="araw"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:paddingRight="2dp"
+                    />
+
+                <TextView
+                    android:id="@+id/q3word3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="araw "
+                    android:textColor="#FF0000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/q3word4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pumapasok sa paaralan."
+                    android:textSize="16sp" />
+
+            </com.google.android.flexbox.FlexboxLayout>
 
             <!-- Question 4 -->
-            <LinearLayout
+            <com.google.android.flexbox.FlexboxLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:layout_marginBottom="16dp">
+                app:flexWrap="wrap"
+                app:justifyContent="flex_start"
+                app:alignItems="baseline"
+                android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/question4"
-                    android:layout_width="0dp"
+                    android:id="@+id/q4word1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:lineSpacingExtra="4dp"
+                    android:text="4. Sabi niya, "
+                    android:textSize="16sp" />
 
-                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/q4word2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Patawad, hindi na ito mauulit"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:paddingEnd="4dp" />
 
-            </LinearLayout>
+            </com.google.android.flexbox.FlexboxLayout>
 
             <!-- Question 5 -->
-            <LinearLayout
+            <com.google.android.flexbox.FlexboxLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:layout_marginBottom="16dp">
+                app:flexWrap="wrap"
+                app:justifyContent="flex_start"
+                app:alignItems="baseline"
+                android:padding="8dp">
 
                 <TextView
-                    android:id="@+id/question5"
-                    android:layout_width="0dp"
+                    android:id="@+id/q5word1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:lineSpacingExtra="4dp"
+                    android:text="5. Napakasarap ng pagkaing "
+                    android:textSize="16sp" />
 
-                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/q5word2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ito"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp"
+                    android:paddingEnd="4dp" />
 
-            </LinearLayout>
+            </com.google.android.flexbox.FlexboxLayout>
 
+            <!-- Question 6 -->
+            <com.google.android.flexbox.FlexboxLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:flexWrap="wrap"
+                app:justifyContent="flex_start"
+                app:alignItems="baseline"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/q6word1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6. Hindi ba siya "
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/q6word2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yun"
+                    android:textColor="#FF0000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/q6word3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Yung lagi nya na kasama?"
+                    android:textSize="16sp" />
+
+            </com.google.android.flexbox.FlexboxLayout>
 
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bottom Navigation Button -->
+    <!-- Continue Button -->
     <Button
         android:id="@+id/continueButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Magpatuloy"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#00796B"
+        android:text="Magpatuloy"
         android:textColor="#FFF"
-        android:textSize="16sp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp" />
+        android:textSize="16sp" />
+
 </LinearLayout>
