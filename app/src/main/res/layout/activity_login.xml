@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#f8f9d9"
+    android:background="#FDF7F2"
     tools:context=".Login">
 
     <!-- Header with Logo and Title -->
@@ -21,7 +21,7 @@
             android:id="@+id/logoImage"
             android:layout_width="128dp"
             android:layout_height="128dp"
-            android:src="@drawable/logo2" />
+            android:src="@drawable/logo" />
 
         <TextView
             android:id="@+id/title"

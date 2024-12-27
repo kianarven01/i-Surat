@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#f8f9d9"
+    android:background="#FDF7F2"
     android:gravity="center"
     tools:context=".SignUp">
 
@@ -23,7 +23,7 @@
             android:layout_width="128dp"
             android:layout_height="128dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/logo2" />
+            android:src="@drawable/logo" />
 
         <TextView
             android:id="@+id/title"

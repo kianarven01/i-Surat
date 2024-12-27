@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FDF7F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDF7F2"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="i-SURAT"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/pagbabaybayTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAGBABAYBAY"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_gravity="left"
+            android:layout_marginTop="8dp"
+            />
+
+        <!-- Instruction Text -->
+        <TextView
+            android:id="@+id/instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Panuto: Basahin at piliin ang mga salitang may wastong pagbaybay. I-drag ang sagot sa patlang."
+            android:layout_marginTop="16dp"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#444"
+            android:layout_marginBottom="8dp"
+            />
+
+
+        <!-- Question 1: Confetti -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/blankConfetti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1) CONFETTI; ________________"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/confettiOptionA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kon-pe-ti"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+
+                <TextView
+                    android:id="@+id/confettiOptionB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kon-fi-ti"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+
+                <TextView
+                    android:id="@+id/confettiOptionC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="con-fe-ti"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+
+                <TextView
+                    android:id="@+id/confettiOptionD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kon-fe-ti"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Question 2: Escuela -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/blankEscuela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2) ESCUELA; ________________"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/escuelaOptionA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="es-ku-we-la"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+
+                <TextView
+                    android:id="@+id/escuelaOptionB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="es-ku-e-la"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+
+                <TextView
+                    android:id="@+id/escuelaOptionC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="es-kwe-la"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+
+                <TextView
+                    android:id="@+id/escuelaOptionD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="es-ku-we-la"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Question 3: Janitor -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/blankJanitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3) JANITOR; ________________"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/janitorOptionA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ja-ni-to-r"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+
+                <TextView
+                    android:id="@+id/janitorOptionB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ja-ni-tor"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+
+                <TextView
+                    android:id="@+id/janitorOptionC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ja-ni-tor"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+
+                <TextView
+                    android:id="@+id/janitorOptionD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jan-itor"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Question 4: Manager -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/blankManager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4) MANAGER; ________________"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/managerOptionA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ma-najer"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+
+                <TextView
+                    android:id="@+id/managerOptionB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ma-njer"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+
+                <TextView
+                    android:id="@+id/managerOptionC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ma-na-jir"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+
+                <TextView
+                    android:id="@+id/managerOptionD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ma-ney-dyer"
+                    android:background="@android:color/holo_blue_light"
+                    android:padding="8dp"
+                    android:layout_margin="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I-SUMITE"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#3F51B5"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>
