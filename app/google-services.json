@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "260677103954",
+    "project_id": "gca2-bd10c",
+    "storage_bucket": "gca2-bd10c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260677103954:android:3db25ef0f8806f3f514a8b",
+        "android_client_info": {
+          "package_name": "com.example.gca2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCfohkAf6BxbSU2QGuM7OlLcr0eNLlVps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
