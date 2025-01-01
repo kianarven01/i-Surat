@@ -7,13 +7,68 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 public class MaterialFragment extends Fragment {
+
+    LinearLayout baybay;
+    LinearLayout salita;
+    LinearLayout bantas;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_material, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_material, container, false);
+        baybay = rootView.findViewById(R.id.baybayVid);
+        salita = rootView.findViewById(R.id.salitaVid);
+        bantas = rootView.findViewById(R.id.bantasVid);
+
+        baybay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("title", "Wastong Pagbabaybay");
+                bundle.putString("link", "https://drive.google.com/uc?export=download&id=1--e57DvZ8xYUO6ino8vFl2oQb3iINm8Q");
+                VideoViewFragment fragment = new VideoViewFragment();
+                fragment.setArguments(bundle);
+                navigateToFragment(fragment);
+            }
+        });
+
+        salita.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("title", "Wastong gamit ng mga salita");
+                bundle.putString("link", "https://drive.google.com/uc?export=download&id=1pbyNZ-puAht4fa3i8fhZK2B9oFwWkwBW");
+                VideoViewFragment fragment = new VideoViewFragment();
+                fragment.setArguments(bundle);
+                navigateToFragment(fragment);
+            }
+        });
+
+        bantas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("title", "Wastong Pagbabantas");
+                bundle.putString("link", "https://drive.google.com/uc?export=download&id=1DtZiKMCW11rH4hLlquHfrb_5CD66Jp4P");
+                VideoViewFragment fragment = new VideoViewFragment();
+                fragment.setArguments(bundle);
+                navigateToFragment(fragment);
+            }
+        });
+
+        return rootView;
+    }
+
+    private void navigateToFragment(Fragment fragment) {
+        if (getActivity() != null) {
+            // Replace the current fragment and add the transaction to the back stack
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, fragment)
+                    .addToBackStack(null)
+                    .commit();
+        }
     }
 }

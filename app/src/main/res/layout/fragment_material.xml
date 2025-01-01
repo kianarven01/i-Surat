@@ -43,6 +43,7 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/baybayVid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="5sp"
@@ -71,13 +72,14 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="https://youtube.com/watch?v=7MHUVg-AzJ4&amp;si=i380G7nSvbISVHne"
+                        android:text="Panoorin ang video upang matuto ng wastong pagbabaybay."
                         android:textStyle="italic" />
                 </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/salitaVid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="5sp"
@@ -106,16 +108,16 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/textView19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="https://youtube.com/watch?v=mmVunhd4QQc&amp;si=XQ_EdR1plaE-Y1TQ"
+                        android:text="Panoorin ang video upang malaman ang wastong gamit ng mga salita."
                         android:textStyle="italic" />
                 </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/bantasVid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="5sp"
@@ -138,13 +140,13 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="WASTONG PAGBABAYBAY"
+                        android:text="WASTONG PAGBABANTAS"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="https://youtube.com/watch?v=srACuPzaqlwamp;si=HxWj0ac_cpZa7YoQ "
+                        android:text="Panoorin ang video upang matuto ng wastong pagbabantas."
                         android:textStyle="italic" />
                 </LinearLayout>
 
