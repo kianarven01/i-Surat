@@ -1,22 +1,32 @@
 package com.example.gca2;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.DragEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Option3 extends Fragment {
+    Button continueBtn;
+    private int score = 0;
+    ArrayList<String> answers = new ArrayList<>();
+    ArrayList<String> correctAnswers = new ArrayList<>(Arrays.asList("bakasyon,", "Baguio,", "saging.", "araw-araw", "\"Patawad, hindi na ito mauulit\"", "ito!", "yun?"));
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_option3, container, false);
+        continueBtn = view.findViewById(R.id.continueButton);
 
         // Get references to the punctuation and words
         TextView punctuation1 = view.findViewById(R.id.punctuation1);
@@ -64,7 +74,29 @@ public class Option3 extends Fragment {
         // Question6
         q6word2.setOnDragListener(new WordDropListener(q6word2));
 
+        continueBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                for (String item : correctAnswers) {
+                    if (answers.contains(item)) {
+                        score+=10;  // Increment score for each match
+                    }
+                }
+
+                updateScore();
+            }
+        });
+
+
         return view;
+    }
+
+    private void updateScore() {
+        Bundle bundle = new Bundle();
+        bundle.putString("score", String.valueOf(score));
+        ScoreFragment fragment = new ScoreFragment();
+        fragment.setArguments(bundle);
+        navigateToFragment(fragment);
     }
 
     // Helper function to make punctuation marks draggable
@@ -137,7 +169,26 @@ public class Option3 extends Fragment {
                         currentWord = currentWord + punctuation;
                     }
 
+                    if(currentWord.contains("bakasyon")){
+                        answers.add(0, currentWord);
+                    }else if(currentWord.contains("Baguio")){
+                        answers.add(1, currentWord);
+                    }else if(currentWord.contains("saging")){
+                        answers.add(2, currentWord);
+                    }else if(currentWord.contains("araw")){
+                        answers.add(3, currentWord);
+                    }else if(currentWord.contains("Patawad")){
+                        answers.add(4, currentWord);
+                    }else if(currentWord.contains("ito")){
+                        answers.add(5, currentWord);
+                    }else if(currentWord.contains("yun")) {
+                        answers.add(6, currentWord);
+                    }
+
+
                     wordView.setText(currentWord);
+                    wordView.setEnabled(false);
+                    wordView.setTextColor(Color.BLACK);
                     // ... (Toast and log) ...
                     return true;
 
@@ -149,6 +200,15 @@ public class Option3 extends Fragment {
                 default:
                     return false;
             }
+        }
+    }
+
+    private void navigateToFragment(Fragment fragment) {
+        if (getActivity() != null) {
+            // Replace the current fragment and add the transaction to the back stack
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, fragment)
+                    .commit();
         }
     }
 }

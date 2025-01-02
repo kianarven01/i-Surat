@@ -31,7 +31,7 @@ public class VideoViewFragment extends Fragment {
         videoView.setPlayer(player);
 
         // Set the path to the video (from raw folder or URL)
-        String videoPath = bundle.getString("link", "No message received");; // From raw folder
+        String videoPath = bundle.getString("link", "No message received"); // From raw folder
         // String videoPath = "https://www.example.com/sample_video.mp4"; // External URL
 
         MediaItem mediaItem = MediaItem.fromUri(Uri.parse(videoPath));
