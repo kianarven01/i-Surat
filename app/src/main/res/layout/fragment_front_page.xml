@@ -15,6 +15,7 @@
         android:layout_marginTop="36dp"
         android:text="Alternatibong Kagamitan Pampagkatuto sa Kasanayan\nsa Pagsulat ng mga Mag-aaral sa\nMoreno Integrated School"
         android:textAlignment="center"
+        android:textColor="#070000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,6 +29,7 @@
         android:layout_marginTop="36dp"
         android:fontFamily="serif"
         android:text="i-SURAT"
+        android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,6 +63,7 @@
 
     <Button
         android:id="@+id/option_button"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="233dp"
         android:layout_height="42dp"
         android:layout_marginTop="36dp"

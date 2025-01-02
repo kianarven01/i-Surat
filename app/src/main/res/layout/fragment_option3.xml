@@ -24,12 +24,13 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="i-SURAT"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            android:layout_marginTop="8dp"
             android:fontFamily="serif"
             android:gravity="center"
-            android:layout_marginTop="8dp" />
+            android:text="i-SURAT"
+            android:textColor="#070000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 
@@ -47,10 +48,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/transparent"
+            android:padding="8dp"
             android:text="PAGBABANTAS"
-            android:textStyle="bold"
+            android:textColor="#070000"
             android:textSize="16sp"
-            android:padding="8dp" />
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/searchIcon"
@@ -63,11 +65,11 @@
         android:id="@+id/instructions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Panuto: Hanapin sa kahon at i-drag ang wastong bantas upang mabuo ang pangungusap."
         android:layout_marginTop="16dp"
-        android:textSize="14sp"
         android:lineSpacingExtra="4dp"
-        android:textColor="#444" />
+        android:text="Panuto: Hanapin sa kahon at i-drag ang wastong bantas upang mabuo ang pangungusap."
+        android:textColor="#070000"
+        android:textSize="14sp" />
 
     <!-- Question Section -->
     <LinearLayout
@@ -175,9 +177,10 @@
                     android:id="@+id/q1word1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingEnd="4dp"
                     android:text="1. Sa"
-                    android:textSize="16sp"
-                    android:paddingEnd="4dp" />
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/q1word2"
@@ -192,9 +195,10 @@
                     android:id="@+id/q1word3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingEnd="4dp"
                     android:text="pupunta kami sa"
-                    android:textSize="16sp"
-                    android:paddingEnd="4dp" />
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/q1word4"
@@ -209,17 +213,19 @@
                     android:id="@+id/q1word5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingEnd="4dp"
                     android:text="Tagaytay,"
-                    android:textSize="16sp"
-                    android:paddingEnd="4dp" />
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/q1word6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingEnd="4dp"
                     android:text="at Ilocos."
-                    android:textSize="16sp"
-                    android:paddingEnd="4dp" />
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
 
             </com.google.android.flexbox.FlexboxLayout>
 
@@ -237,6 +243,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="2. Ang paborito kong prutas ay "
+                    android:textColor="#000000"
                     android:textSize="16sp" />
 
                 <TextView
@@ -264,6 +271,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3. Si Juan ay "
+                    android:textColor="#070000"
                     android:textSize="16sp" />
 
                 <TextView
@@ -289,6 +297,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="pumapasok sa paaralan."
+                    android:textColor="#100101"
                     android:textSize="16sp" />
 
             </com.google.android.flexbox.FlexboxLayout>
@@ -307,6 +316,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4. Sabi niya, "
+                    android:textColor="#000000"
                     android:textSize="16sp" />
 
                 <TextView
@@ -334,6 +344,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5. Napakasarap ng pagkaing "
+                    android:textColor="#000000"
                     android:textSize="16sp" />
 
                 <TextView
@@ -361,6 +372,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="6. Hindi ba siya "
+                    android:textColor="#000000"
                     android:textSize="16sp" />
 
                 <TextView
@@ -376,6 +388,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" Yung lagi nya na kasama?"
+                    android:textColor="#000000"
                     android:textSize="16sp" />
 
             </com.google.android.flexbox.FlexboxLayout>

@@ -29,7 +29,9 @@ public class ScoreFragment extends Fragment {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navigateToFragment(new FrontPageFragment());
+                //navigateToFragment(new FrontPageFragment());
+                getParentFragmentManager().popBackStack();
+                getParentFragmentManager().popBackStack();
             }
         });
         // Inflate the layout for this fragment

@@ -33,6 +33,9 @@ public class Option2 extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         submit = view.findViewById(R.id.submitButton);
+        for (int i = 0; i < 4; i++) {
+            answers.add(null); // Add placeholder values (null in this case)
+        }
 
         // Setting up drag listeners for each option with their corresponding category
         setUpDragAndDrop(view, R.id.confettiOptionA, R.id.blankConfetti, "CONFETTI");
@@ -115,18 +118,18 @@ public class Option2 extends Fragment {
                     String draggedCategory = (String) draggedView.getTag();  // Retrieve the category tag from the dragged view
 
                     if(category.equals("CONFETTI")){
-                        answers.add(0, draggedWord);
+                        answers.set(0, draggedWord);
                     }else if(category.equals("ESCUELA")){
-                        answers.add(1, draggedWord);
+                        answers.set(1, draggedWord);
                     }else if(category.equals("JANITOR")){
-                        answers.add(2, draggedWord);
+                        answers.set(2, draggedWord);
                     }else if(category.equals("MANAGER")){
-                        answers.add(3, draggedWord);
+                        answers.set(3, draggedWord);
                     }
 
                     // Only allow drops from the matching category
                     if (!draggedCategory.equals(category)) {
-                        Toast.makeText(getContext(), "Invalid category drop!", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getContext(), "Invalid category drop!", Toast.LENGTH_SHORT).show();
                         return false; // Do not accept the drag if categories do not match
                     }
 
@@ -140,7 +143,7 @@ public class Option2 extends Fragment {
 
                     dropTarget.setText(updatedText); // Update the TextView with the new text
                     dropTarget.setEnabled(false);
-                    dropTarget.setBackgroundColor(Color.BLACK);
+                    dropTarget.setTextColor(Color.BLACK);
 
                     v.setBackgroundColor(getResources().getColor(android.R.color.transparent)); // Remove highlight
                     //Toast.makeText(getContext(), "Word placed: " + draggedView.getText(), Toast.LENGTH_SHORT).show();

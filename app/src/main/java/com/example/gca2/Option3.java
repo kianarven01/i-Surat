@@ -28,6 +28,10 @@ public class Option3 extends Fragment {
         View view = inflater.inflate(R.layout.fragment_option3, container, false);
         continueBtn = view.findViewById(R.id.continueButton);
 
+        for (int i = 0; i < 7; i++) {
+            answers.add(null); // Add placeholder values (null in this case)
+        }
+
         // Get references to the punctuation and words
         TextView punctuation1 = view.findViewById(R.id.punctuation1);
         TextView punctuation2 = view.findViewById(R.id.punctuation2);
@@ -170,25 +174,25 @@ public class Option3 extends Fragment {
                     }
 
                     if(currentWord.contains("bakasyon")){
-                        answers.add(0, currentWord);
+                        answers.set(0, currentWord);
                     }else if(currentWord.contains("Baguio")){
-                        answers.add(1, currentWord);
+                        answers.set(1, currentWord);
                     }else if(currentWord.contains("saging")){
-                        answers.add(2, currentWord);
+                        answers.set(2, currentWord);
                     }else if(currentWord.contains("araw")){
-                        answers.add(3, currentWord);
+                        answers.set(3, currentWord);
                     }else if(currentWord.contains("Patawad")){
-                        answers.add(4, currentWord);
+                        answers.set(4, currentWord);
                     }else if(currentWord.contains("ito")){
-                        answers.add(5, currentWord);
+                        answers.set(5, currentWord);
                     }else if(currentWord.contains("yun")) {
-                        answers.add(6, currentWord);
+                        answers.set(6, currentWord);
                     }
 
 
                     wordView.setText(currentWord);
-                    wordView.setEnabled(false);
-                    wordView.setTextColor(Color.BLACK);
+                    //wordView.setEnabled(false);
+                    //wordView.setTextColor(Color.BLACK);
                     // ... (Toast and log) ...
                     return true;
 

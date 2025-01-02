@@ -22,39 +22,38 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="i-SURAT"
-            android:textSize="24sp"
-            android:textStyle="bold"
+            android:layout_marginTop="8dp"
             android:fontFamily="serif"
             android:gravity="center"
-            android:layout_marginTop="8dp"
-            />
+            android:text="i-SURAT"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/pagbabaybayTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PAGBABAYBAY"
-            android:textSize="16sp"
-            android:padding="8dp"
-            android:textStyle="bold"
-            android:fontFamily="serif"
             android:layout_gravity="left"
             android:layout_marginTop="8dp"
-            />
+            android:fontFamily="serif"
+            android:padding="8dp"
+            android:text="PAGBABAYBAY"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <!-- Instruction Text -->
         <TextView
             android:id="@+id/instructions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Panuto: Basahin at piliin ang mga salitang may wastong pagbaybay. I-drag ang sagot sa patlang."
             android:layout_marginTop="16dp"
-            android:textSize="14sp"
-            android:lineSpacingExtra="4dp"
-            android:textColor="#444"
             android:layout_marginBottom="8dp"
-            />
+            android:lineSpacingExtra="4dp"
+            android:text="Panuto: Basahin at piliin ang mga salitang may wastong pagbaybay. I-drag ang sagot sa patlang."
+            android:textColor="#000000"
+            android:textSize="14sp" />
 
 
         <!-- Question 1: Confetti -->
@@ -68,9 +67,10 @@
                 android:id="@+id/blankConfetti"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:text="1) CONFETTI; ________________"
-                android:textSize="16sp"
-                android:layout_marginBottom="8dp" />
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -128,9 +128,10 @@
                 android:id="@+id/blankEscuela"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:text="2) ESCUELA; ________________"
-                android:textSize="16sp"
-                android:layout_marginBottom="8dp" />
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
 
             <LinearLayout
@@ -188,9 +189,10 @@
                 android:id="@+id/blankJanitor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:text="3) JANITOR; ________________"
-                android:textSize="16sp"
-                android:layout_marginBottom="8dp" />
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
 
             <LinearLayout
@@ -248,9 +250,10 @@
                 android:id="@+id/blankManager"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:text="4) MANAGER; ________________"
-                android:textSize="16sp"
-                android:layout_marginBottom="8dp" />
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
 
             <LinearLayout
