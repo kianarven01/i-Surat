@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -25,6 +26,7 @@ public class VideoViewFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_video_view, container, false);
         PlayerView videoView = rootView.findViewById(R.id.playerView);
+        ImageButton from_video = rootView.findViewById(R.id.from_video);
         Bundle bundle = getArguments();
 
         player = new ExoPlayer.Builder(getContext()).build();
@@ -39,6 +41,9 @@ public class VideoViewFragment extends Fragment {
         player.prepare();
         player.play();
 
+        from_video.setOnClickListener(v -> {
+            getParentFragmentManager().popBackStack();
+        });
 
         return rootView;
     }

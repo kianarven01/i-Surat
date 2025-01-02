@@ -159,6 +159,7 @@ public class Option2 extends Fragment {
             // Replace the current fragment and add the transaction to the back stack
             getActivity().getSupportFragmentManager().beginTransaction()
                     .replace(R.id.fragment_container, fragment)
+                    .addToBackStack(null)
                     .commit();
         }
     }

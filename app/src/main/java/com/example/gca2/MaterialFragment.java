@@ -91,7 +91,7 @@ public class MaterialFragment extends Fragment {
 
         bantas_ppt.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)  {
                 Bundle bundle = new Bundle();
                 bundle.putString("title", "Wastong Pagbabantas PPT");
                 bundle.putString("link", "https://www.slideshare.net/slideshow/wastong-pagbabantas/10163504");
