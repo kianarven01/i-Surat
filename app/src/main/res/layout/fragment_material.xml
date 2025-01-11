@@ -231,6 +231,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Basahin upang madagdagan ang kaalaman sa wastong gamit ng mga salita."
+                        android:textColor="#000000"
                         android:textStyle="italic" />
                 </LinearLayout>
 

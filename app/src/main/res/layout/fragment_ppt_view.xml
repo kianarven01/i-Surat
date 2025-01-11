@@ -12,11 +12,12 @@
         android:layout_height="55dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
         android:src="@drawable/exit_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:srcCompat="@tools:sample/avatars"
-        android:scaleType="fitCenter"/>
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/textView8"
@@ -46,8 +47,7 @@
         app:layout_constraintBottom_toTopOf="@+id/from_ppt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/webView" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <WebView
         android:id="@+id/webView"
@@ -56,8 +56,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@id/editTextTextMultiLine2"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />

@@ -20,31 +20,10 @@ public class InfoFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        ImageButton pkr = view.findViewById(R.id.imageButton3);
-        ImageButton jsa = view.findViewById(R.id.imageButton7);
-        ImageButton ins = view.findViewById(R.id.imageButton8);
+
         ImageButton fromInfo = view.findViewById(R.id.from_info);
 
-        TextView name = view.findViewById(R.id.nameText);
-        TextView title = view.findViewById(R.id.person_title);
 
-        pkr.setOnClickListener(v -> {
-            name.setText("Princess Key R. Reniva".toUpperCase());
-            title.setText("Mananaliksik");
-
-        });
-
-        jsa.setOnClickListener(v -> {
-            name.setText("Joanabell C. San Agustin".toUpperCase());
-            title.setText("Mananaliksik");
-
-        });
-
-        ins.setOnClickListener(v -> {
-            name.setText("Edwin R. Ichiano".toUpperCase() + ", PhD");
-            title.setText("Tagapayo");
-
-        });
 
         fromInfo.setOnClickListener(v -> {
             getParentFragmentManager().popBackStack();
